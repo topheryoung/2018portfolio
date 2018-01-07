@@ -1,0 +1,60 @@
+h1 {
+  font-family: 'Eczar', serif;
+  font-size: 72px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 70px;
+  margin: 10px;
+}
+
+h2 {
+  font-family: 'Eczar', serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 10px;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  &.hover-effect {
+    &:before {
+      content: '';
+      width: 0;
+      position: absolute;
+      left: -5px;
+      z-index: -1;
+      transition-timing-function: cubic-bezier(.8, .09, 1, .44);
+      transition-delay: 400ms;
+      transition: all 600ms cubic-bezier(1, 0, 0, 1) 0ms;
+    }
+    &:hover {
+      &:before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: -5px;
+        z-index: -1;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.hero {
+  height: 100vh;
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  .site-intro {
+    width: 450px;
+    text-align: center;
+  }
+  .scroll-please {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    .scroll-icon {
+      height: 110px;
+      width: 120px;
+      padding: 10px;
+      .pointer {
+        fill: $white;
+        fill-rule: evenodd;
+      }
+      .text {
+        fill: $secondary;
+        animation-name: rotate-scroll;
+        animation-duration: 15.5s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+
+@keyframes rotate-scroll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
