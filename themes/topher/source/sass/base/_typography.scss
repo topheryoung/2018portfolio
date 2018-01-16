@@ -1,3 +1,5 @@
+* { font-family: 'Lato', sans-serif; }
+
 h1 {
   font-family: 'Eczar', serif;
   letter-spacing: 10px;
@@ -13,14 +15,15 @@ h1 {
 
 h2 {
   font-family: 'Eczar', serif;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   margin: 10px;
-  font-size: 34px;
-  line-height: 32px;
+  font-size: 28px;
+  line-height: 24px;
   @media (min-width: 426px) {
     font-size: 48px;
     line-height: 45px;
+    letter-spacing: 10px;
     margin: 20px 10px;
   }
   @media (min-width: 769px) {
@@ -56,6 +59,7 @@ a {
   text-decoration: none;
   position: relative;
   display: inline-block;
+  z-index: 3;
   &.hover-effect {
     &:before {
       content: '';
@@ -76,5 +80,23 @@ a {
         z-index: -1;
       }
     }
+    > h6 {
+      z-index: 4;
+    }
   }
+}
+
+.line-break {
+  height: 2px;
+  width: 200px;
+  background-color: $line-break;
+  margin: 20px 0;
+}
+
+p {
+  color: $p;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
 }

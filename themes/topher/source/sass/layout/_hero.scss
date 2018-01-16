@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 9;
   .site-intro {
     width: 100%;
     @media (min-width: 426px) {

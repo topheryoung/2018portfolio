@@ -1,28 +1,23 @@
 html {
-  background: $secondary url('../../images/bg-pattern.png') repeat fixed top center;
+  //background: $secondary url('../../images/bg-pattern.png') repeat fixed top center;
 }
 //:root {
 //  background: url('../../images/bg-pattern.png') repeat fixed top center;
 //}
 
 body {
+  background: $secondary;
   margin: 0;
   padding: 0;
 }
 
 .page-frame {
-  border: 20px solid $secondary;
+  // border: 20px solid $secondary;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   background: transparent;
-}
-
-.content {
-  //margin-top: 20px;
-  //border-top: 20px solid $light-green;
-  //border-bottom: 20px solid $light-green;
-  background: $white;
+  z-index: 1;
 }

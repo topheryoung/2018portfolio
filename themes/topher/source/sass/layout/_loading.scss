@@ -1,0 +1,17 @@
+.loading-icon,
+.loading-icon:after {
+  background: url('../images/topher_loader.gif') $secondary;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+}

@@ -4,11 +4,17 @@ $light-green: #6FC499;
 $white: #ffffff;
 $light-orange: #F79F66;
 $red: #D03F58;
+
 $dark-green-95: rgba(47, 57, 56, 0.95);
+
+$light-grey: #E6E6E6;
+$mid-grey: #DADADA;
+$dark-grey: #808080;
 
 // Global setters
 $primary: $dark-green;
 $secondary: $light-green;
+$accent: $red;
 $primary-overlay: $dark-green-95;
 
 // Menu button
@@ -18,8 +24,15 @@ $dot-color-dark: $dark-green;
 
 // Link colors
 $hover-bar: $red;
+$hover-bar-accent: $light-orange;
 
+// Text colors and utilities
+$count-text: $light-grey;
+$line-break: $light-grey;
+$type-text: $mid-grey;
+$p: $dark-grey;
 
 .white-text { color: $white; }
 .light-text { color: $light-orange; }
 .secondary-text { color: $secondary; }
+.accent-text { color: $accent; }

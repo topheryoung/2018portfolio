@@ -1,13 +1,14 @@
 <%- partial('_partial/head') %>
 <body>
-  <div class="page-frame"></div>
-  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <div class="animsition">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
 
-  <!-- Logic to only header HERO on index -->
-  <%- partial('_partial/hero', null, {cache: !config.relative_link}) %>
-  <!-- END LOGIC -->
+    <!-- Logic to only header HERO on index -->
+    <%- partial('_partial/hero', null, {cache: !config.relative_link}) %>
+    <!-- END LOGIC -->
 
-  <%- partial('_partial/content', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/content', null, {cache: !config.relative_link}) %>
+  </div>
 
   <%- partial('_partial/after-footer', null, {cache: !config.relative_link}) %>
 </body>
